@@ -16,6 +16,7 @@ Instalarea Docker Desktop și verificarea funcționării acestuia.
 FROM debian:latest
 COPY ./site/ /var/www/html/
 CMD ["sh", "-c", "echo hello from $HOSTNAME"]
+
 ![image](https://github.com/user-attachments/assets/f9aa7ae2-7b53-45a2-9b9f-9359ff691a31)
 
 tot aici facem director nou site cu fisierul index.html cu continut arbitrar(am lasat site gol)
@@ -23,12 +24,14 @@ tot aici facem director nou site cu fisierul index.html cu continut arbitrar(am 
 
 4.Testare 
 In terminal executam comanda docker build -t containers02 . (Astfel cream imaginiea)
+
 ![image](https://github.com/user-attachments/assets/634ec4a5-1bbf-4aaa-834f-cab1245109bb)
 
 Crearea imaginii a durat 20.9 s (Timpul crearii poate varia caci laptopul nu era conectat la o sursa de alimentare => performanta scade)
 
 Executam comanda pentru pornirea containerului: docker run --name containers02 containers02
 Am obtinut afisarea in consola al urmatorului continut hello from a65298f5cd7b unde a65298f5cd7b este numele hostului 
+
 ![image](https://github.com/user-attachments/assets/ed1116bd-7bd1-484b-8d96-dea81c1daef6)
 
 Ștergem containerul și il pornim din nou, executând comenzile:
