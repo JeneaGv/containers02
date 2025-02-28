@@ -14,12 +14,15 @@ Instalarea Docker Desktop și verificarea funcționării acestuia.
 3.In directorul containers02 creem fișierul Dockerfile cu următorul conținut:
 
 FROM debian:latest
+
 COPY ./site/ /var/www/html/
+
 CMD ["sh", "-c", "echo hello from $HOSTNAME"]
 
 ![image](https://github.com/user-attachments/assets/f9aa7ae2-7b53-45a2-9b9f-9359ff691a31)
 
 tot aici facem director nou site cu fisierul index.html cu continut arbitrar(am lasat site gol)
+
 ![image](https://github.com/user-attachments/assets/8270046c-e3bf-4a8f-8314-eb9a1dca3be4)
 
 4.Testare 
