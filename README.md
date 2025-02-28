@@ -26,6 +26,7 @@ tot aici facem director nou site cu fisierul index.html cu continut arbitrar(am 
 ![image](https://github.com/user-attachments/assets/8270046c-e3bf-4a8f-8314-eb9a1dca3be4)
 
 4.Testare 
+
 In terminal executam comanda docker build -t containers02 . (Astfel cream imaginiea)
 
 ![image](https://github.com/user-attachments/assets/634ec4a5-1bbf-4aaa-834f-cab1245109bb)
@@ -40,6 +41,7 @@ Am obtinut afisarea in consola al urmatorului continut hello from a65298f5cd7b u
 Ștergem containerul și il pornim din nou, executând comenzile:
 
 docker rm containers02
+
 docker run -ti --name containers02 containers02 bash
 
 ![image](https://github.com/user-attachments/assets/70c41373-6d67-42c8-bb2c-80eb5e9732ec)
