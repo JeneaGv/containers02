@@ -58,6 +58,8 @@ ls -l
 
 si inchidem fereastra cu ajutorul comenzii exit
 
+![image](https://github.com/user-attachments/assets/c24d7ec0-a6da-4de0-bfbf-dcb6faf1a419)
+
 Ne apare ca fisierele listate in acest director ocupa un volum de 4KB(aceasta observam in afisarea la total 4)
 -rwxr-xr-x → Permisiuni ale fișierului:
 
@@ -78,5 +80,3 @@ root root Proprietarul și grupul care dețin fișierul (root este atât utiliza
 Feb 28 06:44 Data și ora ultimei modificări (28 februarie, ora 06:44).
 
 index.html Numele fișierului.
-
-![image](https://github.com/user-attachments/assets/c24d7ec0-a6da-4de0-bfbf-dcb6faf1a419)
