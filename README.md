@@ -9,9 +9,11 @@ Instalarea Docker Desktop și verificarea funcționării acestuia.
 
 # Executare 
 
-1.Am creat un repositoriu nou pe GitHub cu numele containers02 
-2.am clonat acest repositoriu intr-un folder Cvlab3 cu ajutorul comenzii git clone "url-ul catre repositoriu"
-3.In directorul containers02 creem fișierul Dockerfile cu următorul conținut:
+-Am creat un repositoriu nou pe GitHub cu numele containers02 
+
+-am clonat acest repositoriu intr-un folder Cvlab3 cu ajutorul comenzii git clone "url-ul catre repositoriu"
+
+-In directorul containers02 creem fișierul Dockerfile cu următorul conținut:
 
 FROM debian:latest
 
@@ -33,7 +35,10 @@ In terminal executam comanda docker build -t containers02 . (Astfel cream imagin
 
 Crearea imaginii a durat 20.9 s (Timpul crearii poate varia caci laptopul nu era conectat la o sursa de alimentare => performanta scade)
 
-Executam comanda pentru pornirea containerului: docker run --name containers02 containers02
+Executam comanda pentru pornirea containerului: 
+
+docker run --name containers02 containers02
+
 Am obtinut afisarea in consola al urmatorului continut hello from a65298f5cd7b unde a65298f5cd7b este numele hostului 
 
 ![image](https://github.com/user-attachments/assets/ed1116bd-7bd1-484b-8d96-dea81c1daef6)
@@ -57,9 +62,13 @@ Ne apare ca fisierele listate in acest director ocupa un volum de 4KB(aceasta ob
 -rwxr-xr-x → Permisiuni ale fișierului:
 
 - Este un fișier obișnuit (nu director d, nu link l).
+
 rwx Proprietarul (root) are drepturi de citire (r), scriere (w) și execuție (x).
+
 r-x Grupul (root) are drepturi de citire și execuție, dar nu de scriere.
+
 r-x Alți utilizatori au aceleași drepturi ca și grupul (citire și execuție).
+
 1 Numărul de legături (hard links) către fișier.
 
 root root Proprietarul și grupul care dețin fișierul (root este atât utilizatorul, cât și grupul).
